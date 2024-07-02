@@ -1,7 +1,7 @@
 body{
     background-color: black;
     justify-items: center;
-    font-size: 20px;
+    
     
 }
 
@@ -17,7 +17,7 @@ h1 {
     margin-left: 25%;
     margin-right: 25%;
     color:white;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-align: center;
     text-transform:uppercase;
     font-family: "Libre Baskerville", serif;
