@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fa65231d-7372-414b-8698-c4375ba65310" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../AutoJobApplication/.idea/AutoJobApplication.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AutoJobApplication/alternative.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AutoJobApplication/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataEntryWork/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataEntryWork/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataEntryWork/.idea/DataEntryWork.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataEntryWork/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataEntryWork/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataEntryWork/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataEntryWork/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataEntryWork/alternative.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataEntryWork/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataEntryWork/new_link.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataEntryWork/property_data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataEntryWork/zillo_live.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day48_Selenium/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day48_Selenium/.idea/Day48_Selenium.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day48_Selenium/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day48_Selenium/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day48_Selenium/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day48_Selenium/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day48_Selenium/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DecoratorFuntion/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DecoratorFuntion/.idea/DecoratorFuntion.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DecoratorFuntion/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DecoratorFuntion/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DecoratorFuntion/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DecoratorFuntion/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DecoratorFuntion/exercise.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DecoratorFuntion/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloFlask/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloFlask/.idea/HelloFlask.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloFlask/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloFlask/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloFlask/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloFlask/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloFlask/aqsa.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloFlask/decorator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloFlask/hello.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TwitterAuto/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TwitterAuto/.idea/TwitterAuto.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TwitterAuto/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TwitterAuto/twitterBot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WikipediaInteraction/.idea/WikipediaInteraction.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WikipediaInteraction/appbrewSingup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WikipediaInteraction/cookies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WikipediaInteraction/cooooooooookies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WikipediaInteraction/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../higher-lower/alternative.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../higher-lower/server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instragramauto/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instragramauto/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instragramauto/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instragramauto/.idea/instragramauto.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instragramauto/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instragramauto/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instragramauto/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instragramauto/instafollower.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instragramauto/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/low_high.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2izq488HwAGMHnvOJzYmzqKe2Hx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.low_high.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="low_high" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="low_high_alternative" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/low_high.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.low_high" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-babbdf50b680-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.15989.155" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa65231d-7372-414b-8698-c4375ba65310" name="Changes" comment="" />
+      <created>1720503558506</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720503558506</updated>
+    </task>
+    <servers />
+  </component>
+</project>
