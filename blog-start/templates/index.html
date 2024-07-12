@@ -12,22 +12,17 @@
         <div class="title"><h1>My Blog</h1></div>
     </div>
     <div class="content">
-        <div class="card">
-            <h2>Just a blog post</h2>
-            <p class="text">Lorem ipsum dolor sit </p>
-            <a href="#">Read</a>
-        </div>
-    </div>
-    <div class="content">
-        <div class="card">
-            <h2>Another blog post</h2>
-            <p class="text">Lorem ipsum dolor sit </p>
-            <a href="#">Read</a>
-        </div>
+        {% for tl in data %}
+            <div class="card">
+                <h2>{{ tl['title'] }}</h2>
+                <p class="text">{{ tl['subtitle'] }}</p>
+                <a href="{{ url_for('get_blog', id=tl['id']) }}" style="color: blue; font-size: 20px;">Read</a>
+            </div>
+        {% endfor %}
     </div>
 </div>
 </body>
 <footer>
-    <p>Made with ♥️ in London.</p>
+    <p>Made with ♥️ in the USA.</p>
 </footer>
 </html>

@@ -5,6 +5,15 @@
     <title>Ferdous Bhuiya</title>
 </head>
 <body>
-    <h1>Hello world</h1>
+    <h1 style="color: green; text-align: center;">Hi! Welcome to our blog site</h1>
+    <p style="text-align: center;">
+    <a href="{{ url_for('get_blog', num=3) }}" style="color: blue; font-size: 24px;">Go To Blog</a>
+    </p>
+
 </body>
+<footer>
+
+    <p>Copyright © {{ year }}, All rights reserved.<br>
+    Made by Md Ferdouse Hossain Bhuiya</p>
+</footer>
 </html>
