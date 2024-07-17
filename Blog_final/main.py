@@ -48,7 +48,7 @@ def contact():
 
 def send_email(name, email, phone, message):
     email_message = f"Subject:New Message\n\nName: {name}\nEmail: {email}\nPhone: {phone}\nMessage:{message}"
-    with smtplib.SMTP("smtp.gmail.com") as connection:
+    with smtplib.SMTP("smtp.gmail.com", 587) as connection:
         connection.starttls()
         connection.login(OWN_EMAIL, OWN_PASSWORD)
         time.sleep(10)
@@ -56,4 +56,4 @@ def send_email(name, email, phone, message):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=5001)
