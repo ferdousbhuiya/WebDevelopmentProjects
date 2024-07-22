@@ -1,3 +1,4 @@
+import os
 from datetime import date, timedelta
 from flask import Flask, abort, render_template, redirect, url_for, flash
 from flask_bootstrap import Bootstrap5
@@ -10,8 +11,13 @@ from sqlalchemy import Integer, String, Text
 from functools import wraps
 from werkzeug.security import generate_password_hash, check_password_hash
 from sqlalchemy.orm import relationship
+from flask import Flask, render_template, request, redirect, url_for, flash
+from flask_mail import Mail, Message
+from dotenv import load_dotenv
 # Import your forms from the forms.py
-from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
+from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm, ContactForm
+
+load_dotenv()
 
 '''
 Make sure the required packages are installed: 
@@ -27,16 +33,22 @@ This will install the packages from the requirements.txt for this project.
 '''
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 app.config['SESSION_PERMANENT'] = False
-app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5)
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=15)
 ckeditor = CKEditor(app)
 Bootstrap5(app)
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
+app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
+
 
 # Configure Flask-Login
 login_manager = LoginManager()
 login_manager.init_app(app)
-
+mail = Mail(app)
 @login_manager.user_loader
 def load_user(user_id):
     return db.get_or_404(User, user_id)
@@ -274,7 +286,6 @@ def edit_post(post_id):
 
 # Use a decorator so only an admin user can delete a post
 @app.route("/delete/<int:post_id>")
-@admin_only
 def delete_post(post_id):
     post_to_delete = db.get_or_404(BlogPost, post_id)
     db.session.delete(post_to_delete)
@@ -287,10 +298,26 @@ def about():
     return render_template("about.html", current_user=current_user)
 
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
-    return render_template("contact.html", current_user=current_user)
+    form = ContactForm()
+    msg_sent = False
+    if form.validate_on_submit():
+        name = form.name.data
+        email = form.email.data
+        phone = form.phone.data
+        message = form.message.data
 
+        # Send email
+        msg = Message("New Contact Message",
+                      sender=email,
+                      recipients=["aqsamainu@gmail.com"])
+        msg.body = f"Name: {name}\nEmail: {email}\nPhone: {phone}\n\n{message}"
+        mail.send(msg)
+        msg_sent = True
+        flash('Message sent successfully!')
+        return redirect(url_for('contact'))
+    return render_template('contact.html', form=form, msg_sent=False)
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)

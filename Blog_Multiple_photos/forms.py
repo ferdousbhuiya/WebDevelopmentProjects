@@ -1,8 +1,10 @@
-from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, PasswordField
-from wtforms.fields.simple import TextAreaField
 from wtforms.validators import DataRequired, URL
 from flask_ckeditor import CKEditorField
+from wtforms import StringField, TextAreaField, SubmitField
+from flask_wtf import FlaskForm
+from wtforms import StringField, SubmitField, TextAreaField
+from wtforms.validators import DataRequired, Email
 
 
 # WTForm for creating a blog post
@@ -35,4 +37,10 @@ class CommentForm(FlaskForm):
     comment_text = CKEditorField("Comment", validators=[DataRequired()])
     submit = SubmitField("Submit Comment")
 
-
+#Create form to add in contact me page
+class ContactForm(FlaskForm):
+    name = StringField("Name", validators=[DataRequired()])
+    email = StringField("Email", validators=[DataRequired(), Email()])
+    phone = StringField("Phone", validators=[DataRequired()])
+    message = TextAreaField("Message", validators=[DataRequired()])
+    submit = SubmitField("Send")
