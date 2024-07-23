@@ -250,7 +250,7 @@ def add_new_post():
         db.session.add(new_post)
 
         # Split content_img_urls by new lines and save each URL
-        image_urls = form.content_img_urls.data.splitlines()
+        image_urls = form.content_img_url.data.splitlines()
         for url in image_urls:
             if url.strip():  # Ignore empty lines
                 image = Image(url=url.strip(), post=new_post)
@@ -269,18 +269,22 @@ def edit_post(post_id):
         subtitle=post.subtitle,
         img_url=post.img_url,
         content_img_url=post.content_img_url,
-        author=post.author,
         body=post.body
     )
+
     if edit_form.validate_on_submit():
         post.title = edit_form.title.data
         post.subtitle = edit_form.subtitle.data
         post.img_url = edit_form.img_url.data
         post.content_img_url = edit_form.content_img_url.data
-        post.author = current_user
         post.body = edit_form.body.data
+
+        # Commit changes to the database
         db.session.commit()
+
+        # Redirect to the post detail page
         return redirect(url_for("show_post", post_id=post.id))
+
     return render_template("make-post.html", form=edit_form, is_edit=True, current_user=current_user)
 
 
